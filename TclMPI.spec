@@ -28,15 +28,15 @@ and allows MPI calls to be used from Tcl scripts.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-mkdir -p ${RPM_BUILD_ROOT}%{directory}/%{_lib}/tcl/%{name}%{version}
-cp pkgIndex.tcl ${RPM_BUILD_ROOT}%{directory}/%{_lib}/tcl/%{name}%{version}
-cp tclmpi.tcl ${RPM_BUILD_ROOT}%{directory}/%{_lib}/tcl/%{name}%{version}
-cp _tclmpi.so ${RPM_BUILD_ROOT}%{directory}/%{_lib}/tcl/%{name}%{version}
+mkdir -p ${RPM_BUILD_ROOT}%{tcl_archdir}/%{name}%{version}
+cp pkgIndex.tcl ${RPM_BUILD_ROOT}%{tcl_archdir}/%{name}%{version}
+cp tclmpi.tcl ${RPM_BUILD_ROOT}%{tcl_archdir}/%{name}%{version}
+cp _tclmpi.so ${RPM_BUILD_ROOT}%{tcl_archdir}/%{name}%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{directory}/%{_lib}/tcl
+%{tcl_archdir}
 
