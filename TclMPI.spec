@@ -23,6 +23,7 @@ and allows MPI calls to be used from Tcl scripts.
 %setup -q -n %{name}-%{version}
 
 %build
+export PATH=$PATH:/usr/lib64/mpi/gcc/openmpi/bin
 %{__make}
 
 %install
