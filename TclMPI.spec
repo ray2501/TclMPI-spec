@@ -4,7 +4,7 @@ Summary:	Tcl bindings for MPI
 Name:		tclmpi
 Version:	1.0
 Release:	1
-License:	New BSD
+License:	BSD-3-Clause
 Group:		Development/Languages/Tcl
 Source0:	https://sites.google.com/site/akohlmey/software/tclmpi/tclmpi-1.0.tar.gz
 URL:		https://sites.google.com/site/akohlmey/software/tclmpi
